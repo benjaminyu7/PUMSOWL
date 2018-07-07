@@ -1,0 +1,30 @@
+.guideOverview h2 {
+  color: blue;
+  margin: 0px;
+}
+
+.guideOverview h3 {
+  display: inline;
+}
+
+.guideOverview li {
+  display: list-item;
+}
+#author {
+  display: inline;
+}
+#year {
+  display: inline;
+  
+}
+.guideOverview ul {
+  display: inline-block;
+}
+#leftblock{
+  display: inline-block;
+}
+div.guideOverview {
+  border: 2px solid black;
+  width: 400px;
+  height: 100px;
+}

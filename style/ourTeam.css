@@ -1,0 +1,13 @@
+div.profile {
+  border:2px solid blue;
+  width: 400px;
+  margin-left: 200px;
+}
+
+.profile h3 {
+  text-align: center;
+}
+
+.profile p {
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+.theTabs li {
+  display: inline;
+}
+
+.theTabs button {
+  background: none;
+  border: 2px solid black;
+}
+
+.theTabs button:active {
+  border-bottom: 2px solid white;
+}
+
+.theTabs button:focus {
+  border-bottom: 2px solid white;
+}
+
+ul.theTabs {
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+div.Tabs {
+  margin-left: 200px;
+}
+
+div#canvas {
+  border: 2px solid black;
+  border-top: none;
+  width: 500px;
+}
