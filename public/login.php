@@ -6,6 +6,7 @@
     <?php include'../pumsTemplate.php'?>
     <script type="text/babel" src='../pumsTemplate.js'></script>
     <script type="text/babel" src='../app/pumsTabs.js'></script>
+    <script type="text/babel" src='../app/formsTemplate.js'></script>
     <link rel='stylesheet' href='../style/pumsTabs.css' />
     <link rel='stylesheet' href='../pumsTemplate.css' />
   </head>
@@ -39,26 +40,8 @@
           <label htmlFor='repeat'>Repeat Password:</label>
           <input type='password' id='repeat' name='repeat' />
         </div>
-        <div>
-          <label htmlFor='gradutation'>Graduation Year:</label>
-          <select name='select_graduation'>
-            <option value='2018'>2018</option>
-            <option value='2019'>2019</option>
-            <option value='2020'>2020</option>
-            <option value='2021'>2021</option>
-            <option value='2022'>2022</option>
-            <option value='2023'>2023</option>
-          </select>
-        </div>
-        <div>
-          <label htmlFor='program'>Program:</label>
-          <select name='select_program'>
-	    <option value='6md'>6MD</option>
-	    <option value='5dd'>5DD</option>
-	    <option value='4md'>4MD</option>
-	    <option value='pharmd'>Pharm D</option>
-	  </select>
-        </div>
+        {<SelectGraduation />}
+	{<SelectProgram />}
         <div>
           <label htmlFor='donate'>Donation:</label>
           <select name='select_donation'>

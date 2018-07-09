@@ -11,6 +11,7 @@
     <?php echo $menu;?>
     <div id='yearMenu'>This is the side menu</div>
     <div id='root'>This is where I put the guides</div>
+    <a href='submitGuide.php'>Submit a guide!</a>
     <?php echo $footer;?>
   </body>
 </html>

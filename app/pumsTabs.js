@@ -19,7 +19,7 @@ tabArr.push(new tabObject("Social", <div>This is social</div>));
 //modify the tabs to take an array of titles and content and create a method creates button that makes a certain function happen like a hash map
 
 class TabsGeneric extends React.Component {
-  constructor(tabArr, firstContent) {
+  constructor(tabArr) {
     super();
     this.tabArr = tabArr;
     this.handleContent = this.handleContent.bind(this);
