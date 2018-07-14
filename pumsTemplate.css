@@ -23,6 +23,8 @@ ul.Footer {
 	text-align: center;
 	margin: 0px;
 	margin-top: 20px;
+	padding: 20px;
+	background: #ADD8E6;
 }
 
 .Menu a:link {
@@ -44,3 +46,6 @@ ul.Footer {
   text-decoration: none;
 }
   
+body {
+  margin: 0px;
+}

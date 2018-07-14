@@ -11,7 +11,11 @@
   <body>
     <?php echo $menu;?>
     <div id='root'></div>
-    <script type='text/babel'> </script>
+    <script type='text/babel'> ReactDOM.render(
+      <SubmitGuideForm  />,
+        document.getElementById('root')
+	);
+	</script>
     <?php echo $footer;?>
   </body>
 </html>

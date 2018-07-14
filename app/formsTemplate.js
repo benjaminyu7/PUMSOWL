@@ -148,7 +148,3 @@ class SubmitGuideForm extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <SubmitGuideForm  />,
-  document.getElementById('root')
-);

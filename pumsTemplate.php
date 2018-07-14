@@ -4,6 +4,7 @@
 <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 <link rel='stylesheet' href='pums/pumsTemplate.css'>
 <link rel='stylesheet' href='../pumsTemplate.css'>
+
 <?php
   $menu="
   <ul class='Menu'>
@@ -14,6 +15,7 @@
   ";
   $footer="
   <ul class='Footer'>
+  <p>COPYRIGHT (C) 2018 PUMSOWL.COM</p>
     <li><a href='/pums/public/finances.php'>Finances</a></li>
     <li><a href='/pums/public/ourTeam.php'>Our Team</a></li>
     <li><a href='/pums/public/disclosures.php'>Disclosures</a></li>

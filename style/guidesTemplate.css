@@ -28,3 +28,17 @@ div.guideOverview {
   width: 400px;
   height: 100px;
 }
+div#yearMenu {
+  width: 200px;
+  float:left;
+}
+div#root {
+  float:left;
+}
+div#middle {
+  float:left;
+}
+
+body {
+  display: inline;
+}

@@ -7,6 +7,7 @@
     <script type="text/babel" src='../pumsTemplate.js'></script>
     <script type="text/babel" src='../app/pumsTabs.js'></script>
     <script type="text/babel" src='../app/formsTemplate.js'></script>
+    <script type="text/babel" src='../app/htmlBuilder.js'></script>
     <link rel='stylesheet' href='../style/pumsTabs.css' />
     <link rel='stylesheet' href='../pumsTemplate.css' />
   </head>
@@ -14,7 +15,7 @@
     <?php echo $menu;?>
     <div id='root'>'root'</div>
     <script type="text/babel">
-      const login = <form action='place' method='post'>
+      const login = <form action='../backend/submitLogin.php' method='post'>
         <div>
           <label htmlFor='username'>Username:</label>
           <input type='text' id='username' name='user_name'/>
@@ -56,11 +57,9 @@
           <button type='submit'>Register</button>
         </div>
     </form>;
-    var tabs = [];
-    tabs.push(new tabObject("Login", login));
-    tabs.push(new tabObject("Register", register));
+    var tf= new tabObjectFactory();
     ReactDOM.render(
-      <TabsGeneric tabArr={tabs} />,
+      <TabsGeneric tabArr={[tf.getTab("Login",login),tf.getTab("Register",register)]} />,
       document.getElementById('root')
     );
     </script>

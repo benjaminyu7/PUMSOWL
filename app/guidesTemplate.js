@@ -4,6 +4,7 @@ function GuideOverview(props){
     props.comments[x]=<li>{props.comments[x]}</li>;
   }
   return(
+    <a href="/pums/public/guideDisplay.php">
     <div className='guideOverview'>
       <div id='leftblock'>
         <h2>{props.title}</h2>
@@ -13,6 +14,7 @@ function GuideOverview(props){
       <ul className='guideOverview'>{props.comments}</ul>
       <h3>{props.score}</h3>
     </div>
+    </a>
   );
 }
 
