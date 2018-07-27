@@ -18,9 +18,13 @@ function GuideOverview(props){
   );
 }
 
-var commentArray=['Final','Integrative','Integrative Retake'];
+function getGuide() {
+	var httpRequest = new XMLHttpRequest();
+	httpRequest.open('GET','/pums/backend/getGuideOverview.php'); 
+	httpRequest.onload = function () {
+		var obj = JSON.parse(httpRequest.responseText);
+		console.log(obj.title);
+	}
+	httpRequest.send();
+}
 
-ReactDOM.render(
-  <GuideOverview title='Dank Bio Guide' author='Alvin' year='2016' score='4.5/5' comments={commentArray}/>,
-  document.getElementById('root')
-);

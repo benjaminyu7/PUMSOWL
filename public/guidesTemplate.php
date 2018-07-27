@@ -17,6 +17,14 @@
     </div>
     <br style="clear: both;" />
     <a href='submitGuide.php'>Submit a guide!</a>
+    <script type='text/babel'>
+      var commentArray=['Final','Integrative','Integrative Retake'];
+      ReactDOM.render(
+        <GuideOverview title='Dank Bio Guide' author='Alvin' year='2016' score='4.5/5' comments={commentArray}/>,
+        document.getElementById('root')
+      );
+      getGuide();
+    </script>
     <?php echo $footer;?>
   </body>
 </html>
